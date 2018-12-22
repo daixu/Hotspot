@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LazyViewPager">
+        <attr name="init_lazy_item_offset" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="PowerfulRecyclerView">
+        <attr name="dividerColor" format="color"/>
+        <attr name="dividerSize" format="dimension"/>
+        <attr name="dividerDrawable" format="reference"/>
+        <attr name="useStaggerLayout" format="boolean"/>
+        <attr name="numColumns" format="integer"/>
+        <attr name="rvOrientation" format="enum">
+            <enum name="HORIZONTAL" value="0"/>
+            <enum name="VERTICAL" value="1"/>
+        </attr>
+        <attr name="dividerMarginLeft" format="dimension"/>
+        <attr name="dividerMarginRight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+</resources>

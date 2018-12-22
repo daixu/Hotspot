@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F8F8FA</color>
+    <color name="colorPrimaryDark">#F8F8FA</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_BDBDBD">#BDBDBD</color>
+    <color name="color_7A95F5">#ff7a95f5</color>
+    <color name="color_3091D8">#3091D8</color>
+
+    <color name="tab_click_color">#535E6A</color>
+
+    <!-- 默认字体颜色(深灰色） -->
+    <color name="main_body_major_color">#222222</color>
+    <!-- 次要字体颜色(灰色) -->
+    <color name="main_body_normal_color">#666666</color>
+    <!-- 提示字体颜色 (浅灰色) -->
+    <color name="main_body_prompt_color">#999999</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="line_color">#E1E1E1</color>
+
+    <color name="btn_detail_bg">#FF7B6D</color>
+    <color name="btn_detail_bg_1">#F9F9FA</color>
+
+    <color name="text_detail_color">#535E6A</color>
+</resources>

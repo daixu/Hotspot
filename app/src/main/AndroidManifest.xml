@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jxs.hotspot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".HtApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.3" />
+
+        <activity
+            android:name=".view.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.details.DetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".view.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.details.PersonalDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.details.comment.CommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".view.details.question.QuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".view.sort.SortListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.register.RegisterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".view.pwd.ForgetPwdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".view.pwd.ResetPwdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".view.settings.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.region.RegionCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.details.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.feedback.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.message.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.message.comment.MyCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.me.data.ModifyDataActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

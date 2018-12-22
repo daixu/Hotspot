@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".view.details.PersonalDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:layout_marginTop="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="258dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bg_personal_details" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:background="@drawable/shape_origin_square_bg"
+                    android:contentDescription="@string/app_name"
+                    android:padding="3dp"
+                    android:src="@mipmap/default_avatar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="图灵财经"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="0.15" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#F8F8FA"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/title_back"
+                        android:layout_width="26dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/login_return" />
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="图灵财经"
+                        android:textColor="#ff222222"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_detail_title_bg">
+
+            <TextView
+                android:id="@+id/text_original"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1px"
+                android:layout_marginLeft="1px"
+                android:layout_marginTop="1px"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:background="@drawable/shape_detail_title_select_left_bg"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="原创(3)"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="@dimen/line_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/text_recommend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1px"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="推荐(4)"
+                android:textColor="#ff535e6a"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="@dimen/line_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/text_like"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1px"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="喜欢(12)"
+                android:textColor="#ff535e6a"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="@dimen/line_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/text_reward"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1px"
+                android:layout_marginEnd="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="打赏(12)"
+                android:textColor="#ff535e6a"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <com.jxs.hotspot.widget.LazyViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

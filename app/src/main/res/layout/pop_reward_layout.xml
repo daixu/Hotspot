@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a000000">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/icon_close_1" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="请输入您的打赏额度"
+            android:textColor="#ff535e6a"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/shape_rectangle_edit_bg">
+
+            <EditText
+                android:id="@+id/edit_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入金额"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/main_body_major_color"
+                android:textColorHint="#ffd0d0d0"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/text_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:text="ETH"
+                android:textColor="#ff222222"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="*最低打赏额度：0.01ETH，打赏金额越高，获奖几率越大"
+            android:textColor="#ff999999"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_reward"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_background_origin"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:outlineProvider="none"
+            android:text="确认打赏"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

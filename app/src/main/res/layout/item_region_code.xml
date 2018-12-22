@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginEnd="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_22"
+            android:text="英属维京群岛"
+            android:textColor="#ff222222"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_code"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginEnd="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_22"
+            android:background="@drawable/shape_rectangle_code_bg"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_3"
+            android:text="1284"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:layout_marginStart="@dimen/dp_22"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginEnd="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"
+        android:background="@color/line_color" />
+
+</LinearLayout>
